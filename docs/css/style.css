@@ -1445,6 +1445,12 @@ textarea.form__input {
   }
 }
 
+@media (max-width: 61.99875em) {
+  .footer__container {
+    padding-bottom: 6.25rem;
+  }
+}
+
 @media (max-width: 53.125em) {
   .contacts__content {
     -webkit-box-orient: vertical;
@@ -1593,10 +1599,6 @@ textarea.form__input {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-  }
-
-  .footer__container {
-    padding-bottom: 93.75rem;
   }
 
   .main-section__container {
