@@ -1599,10 +1599,27 @@ textarea.form__input {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
     row-gap: 1.875rem;
+    padding-bottom: 6.25rem;
   }
 
   .decor-main-section {
     max-width: none;
+  }
+
+  .portfolio__container {
+    padding-bottom: 6.25rem;
+  }
+
+  .career__container {
+    padding-bottom: 6.25rem;
+  }
+
+  .skills__container {
+    padding-bottom: 6.25rem;
+  }
+
+  .contacts__container {
+    padding-bottom: 6.25rem;
   }
 }
 
