@@ -14,3 +14,31 @@
 		display: block;
 	}
 }
+
+._icon-link:before {
+  content: "\e900";
+}
+._icon-slider-arrow:before {
+  content: "\e901";
+}
+._icon-s-instagram:before {
+  content: "\e902";
+}
+._icon-s-git:before {
+  content: "\e903";
+}
+._icon-s-twitter:before {
+  content: "\e904";
+}
+._icon-s-linkedin:before {
+  content: "\e905";
+}
+._icon-google3:before {
+  content: "\ea8a";
+}
+._icon-whatsapp:before {
+  content: "\ea93";
+}
+._icon-telegram:before {
+  content: "\ea95";
+}

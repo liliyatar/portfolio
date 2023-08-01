@@ -27,17 +27,17 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Список слайдерів
 	// Перевіряємо, чи є слайдер на сторінці
-	if (document.querySelector('.swiper')) { // Вказуємо склас потрібного слайдера
+	if (document.querySelector('.portfolio__slider')) { // Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
-		new Swiper('.swiper', { // Вказуємо склас потрібного слайдера
+		new Swiper('.portfolio__slider', { // Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
 			modules: [Navigation],
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
+			slidesPerView: 3,
+			spaceBetween: 56,
+			// autoHeight: true,
 			speed: 800,
 
 			//touchRatio: 0,
@@ -73,31 +73,29 @@ function initSliders() {
 
 			// Кнопки "вліво/вправо"
 			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
+				prevEl: '.portfolio__arrow_left',
+				nextEl: '.portfolio__arrow_right',
 			},
-			/*
 			// Брейкпоінти
 			breakpoints: {
-				640: {
-					slidesPerView: 1,
-					spaceBetween: 0,
+				320: {
+					slidesPerView: 1.2,
+					spaceBetween: 10,
 					autoHeight: true,
 				},
-				768: {
+				650 : {
 					slidesPerView: 2,
-					spaceBetween: 20,
+					spaceBetween: 15,
 				},
 				992: {
 					slidesPerView: 3,
 					spaceBetween: 20,
 				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
+				1200: {
+					slidesPerView: 3,
+					spaceBetween: 56,
 				},
 			},
-			*/
 			// Події
 			on: {
 

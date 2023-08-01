@@ -1,150 +1,255 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Верстка «NEW_PROJECT_NAME»</title>
-	</head>
-	<body>
-		<div class="rootpage">
-			<h1>Верстка «NEW_PROJECT_NAME»</h1>
-			<div class="rootpage__info">
-				Опис проєкту
-			</div>
-			<h2>Готові сторінки:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html">Головна</a></li>
-			</ol>
-			<h2>Попапи:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html#"></a></li>
-			</ol>
-			<div class="rootpage__tnx">
-				<h2>Дякую за замовлення!</h2>
-				<p>Буду радий (да) гарному відгуку.</p>
-				<p>Звертайтесь ще!</p>
-			</div>
-			<div class="rootpage__contacts">
-				<h2>Мої контакти:</h2>
-				<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-				<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-				<p>Соц. мережі: <a href="">посилання</a></p>
-			</div>
-		</div>
-	</body>
-	<style>
-		@charset "UTF-8";
-		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-		* ,*::before, *::after {
-			padding: 0px;
-			margin: 0px;
-			border: 0px;
-			box-sizing: border-box; 
-		}
-		html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-			min-width: 320px;
-			width: 100%;
-			color: #fff;
-			background-color: #5e5373;
-		}
-		body {
-			font-family: Montserrat;
-			font-size: 100%;
-			line-height: 1;
-			font-size: 1rem;
-		}
-		a {
-			text-decoration: underline;
-			color: #ebe691
-		}
-		a:visited {
-			text-decoration: underline;
-			color: #aaa768;
-		}
-			a:hover {
-			text-decoration: none;
-		}
-		ul li {
-			list-style: none;
-		}
-		img {
-			vertical-align: top;
-		}
-		.wrapper {
-			width: 100%;
-			min-height: 100%;
-			overflow: hidden;
-		}
-		.rootpage{
-			padding: 30px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-		}
-		@media (max-width: 767px) {
-			.rootpage{
-				padding:30px 15px;
-			}
-		}
-		h1 {
-			color: #ebe691;
-			font-size: 2.5rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-		@media (max-width: 767px) {
-			h1 {
-				font-size: 1.85rem;
-				margin: 0px 0px 1.25rem 0px;
-			}
-		}
-		h2 {
-			color: #ebe691;
-			font-size: 1.25rem;
-			margin: 0px 0px 1rem 0px;
-		}
-		@media (max-width: 767px) {
-			 h2 {
-				font-size: 1.125rem;
-				margin: 0px 0px 1rem 0px;
-			}
-		}
-		.rootpage__info{
-			line-height: 140%;
-			margin: 0px 0px 1.5rem 0px;
-		}
-
-		.rootpage__list{
-			margin: 0px 0px 2.25rem 1.25rem;
-		}
-		.rootpage__list li:not(:last-child){
-			margin: 0px 0px 15px 0px;
-		}
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius: 200px;
-			padding: 20px 65px;
-			line-height: 140%;
-		}
-		@media (max-width: 767px){
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius:40px;
-			padding: 20px;
-		}
-		}
-		.rootpage__contacts{
-			background: #32b5a4;
-			
-		}
-		.rootpage__contacts a{
-			color: #ebe691;
-		}
-		.rootpage__tnx{
-			background: #c22d63;
-			margin: 0px 0px 1rem 0px;
-		}
-	</style>
+<html lang="en">
+  @@include('html/_head.htm',{ "title":"Лилия Кобзева" })
+  <body>
+    <div data-fp class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section data-fp-section class="page__main main-section">
+          <div class="main-section__container">
+            <div class="main-section__content">
+              <div class="main-section__title title">
+                <div class="title__label">Меня зовут</div>
+                <h1 class="title__value title__value_big">
+                  Лилия <span>Кобзева.</span>
+                </h1>
+              </div>
+              <div class="main-section__text text">
+                <p>
+                  Опытная Middle Frontend разработчица с обширными знаниями и практическим опытом в создании высококачественных веб-приложений.
+                </p>
+                <p>
+                  Обладаю углубленными знаниями в области HTML, CSS и JavaScript, а также опытом работы с современными фреймворками (Angular) и библиотеками. Мои навыки включают адаптивную верстку, оптимизацию производительности и разработку сложных пользовательских интерфейсов.
+                </p>
+                <p>
+                  Я стремлюсь к профессиональному росту и постоянно совершенствую свои знания в области фронтенд разработки. 
+                </p>
+              </div>
+              <ul class="main-section__social social">
+                <li class="social__item">
+                  <a href="http://t.me/liliia_kobzeva" target="_blank" class="social__link _icon-telegram"></a>
+                </li>
+                <li class="social__item">
+                  <a href="https://github.com/liliyatar" target="_blank" class="social__link _icon-s-git"></a>
+                </li>
+                <li class="social__item">
+                  <a href="https://wa.me/79135033047" target="_blank" class="social__link _icon-whatsapp"></a>
+                </li>
+                <li class="social__item">
+                  <a href="mailto:liliiakobzeva@gmail.com" target="_blank" class="social__link _icon-google3"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-section__decor decor-main-section">
+              <div class="decor-main-section__box">
+                <div class="decor-main-section__image">
+                  <img
+                    class="decor-main-section__picture"
+                    src="@img/main/liliia.webp"
+                    alt="Picture"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-fp-section class="page__portfolio portfolio">
+          <div class="portfolio__container">
+            <div class="portfolio__header">
+              <div class="portfolio__title title">
+                <div class="title__label">мои работы</div>
+                <h2 class="title__value">Портфолио</h2>
+              </div>
+              <div class="portfolio__controls">
+                <button type="button" class="portfolio__arrow portfolio__arrow_left _icon-slider-arrow"></button>
+                <button type="button" class="portfolio__arrow portfolio__arrow_right _icon-slider-arrow"></button>
+              </div>
+            </div>
+            <div class="portfolio__slider swiper">
+              <div class="portfolio__wrapper swiper-wrapper">
+                <div class="portfolio__slide swiper-slide">
+                  <article class="item-portfolio">
+                    <a href="https://vinogradnik-church.com" target="_blank" class="item-portfolio__image-ibg">
+                      <img src="@img/portfolio/01.jpeg" alt="Agency Website">
+                    </a>
+                    <div class="item-portfolio__body">
+                      <h4 class="item-portfolio__title">
+                        <a href="" class="item-portfolio__link-title">
+                          Сайт для религиозной общины.
+                        </a>
+                      </h4>
+                      <div class="item-portfolio__footer">
+                        <a href="" class="item-portfolio__category category-link">Angular</a>
+                        <a href="" class="item-portfolio__category category-link">TypeScript</a>
+                        <a href="" class="item-portfolio__category category-link">JavaScript</a>
+                        <a href="" class="item-portfolio__category category-link">HTML5</a>
+                        <a href="" class="item-portfolio__category category-link">CSS3</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="portfolio__slide swiper-slide">
+                  <article class="item-portfolio">
+                    <a href="https://liliyatar.github.io/mario_game/" target="_blank" class="item-portfolio__image-ibg">
+                      <img src="@img/portfolio/02.jpeg" alt="Mario Game">
+                    </a>
+                    <div class="item-portfolio__body">
+                      <h4 class="item-portfolio__title">
+                        <a href="" class="item-portfolio__link-title">Игра Mario.</a>
+                      </h4>
+                      <div class="item-portfolio__footer">
+                        <a href="" class="item-portfolio__category category-link">HTML5</a>
+                        <a href="" class="item-portfolio__category category-link">Canvas</a>
+                        <a href="" class="item-portfolio__category category-link">VanillaJS</a>
+                        <a href="" class="item-portfolio__category category-link">JavaScript</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="portfolio__slide swiper-slide">
+                  <article class="item-portfolio">
+                    <a href="https://liliyatar.github.io/farmVest_project/" target="_blank" class="item-portfolio__image-ibg">
+                      <img src="@img/portfolio/03.jpeg" alt="Agency Website">
+                    </a>
+                    <div class="item-portfolio__body">
+                      <h4 class="item-portfolio__title">
+                        <a href="" class="item-portfolio__link-title">сайт FarmVest.</a>
+                      </h4>
+                      <div class="item-portfolio__footer">
+                        <a href="" class="item-portfolio__category category-link">JavaScript</a>
+                        <a href="" class="item-portfolio__category category-link">HTML5</a>
+                        <a href="" class="item-portfolio__category category-link">CSS3</a>
+                        <a href="" class="item-portfolio__category category-link">Git</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-fp-section class="page__career career">
+          <div data-tabs="768" class="career__container">
+            <div class="career__body">
+              <div class="career__title title">
+                <div class="title__label">карьерный путь</div>
+                <h2 class="title__value">Опыт работы</h2>
+              </div>
+              <nav data-tabs-titles class="career__navigation navigation-career">
+                <button type="button" class="navigation-career__title _tab-active">Dev.Pro</button>
+              </nav>
+              <div data-tabs-body class="career__content content-career">
+                <div class="content-career__body">
+                  <div class="content-career__header">
+                    <div class="content-career__title">Software Engineer <a href="https://dev.pro/" target="_blank" class="content-career__link-title">Dev.Pro</a></div>
+                    <div class="content-career__location">Харьков, Украина</div>
+                    <div class="content-career__time">Март 2020 - Март 2022 · Полный рабочий день</div>
+                    <div class="content-career__categories">
+                      <a href="#" class="category-link">Angular</a>
+                      <a href="#" class="category-link">TypeScript</a>
+                      <a href="#" class="category-link">JavaScript</a>
+                      <a href="#" class="category-link">HTML5</a>
+                      <a href="#" class="category-link">CSS3</a>
+                      <a href="#" class="category-link">RxJS</a>
+                      <a href="#" class="category-link">Docker</a>
+                      <a href="#" class="category-link">MongoDB</a>
+                      <a href="#" class="category-link">REST API</a>
+                      <a href="#" class="category-link">Postman</a>
+                      <a href="#" class="category-link">Node.js</a>
+                      <a href="#" class="category-link">Jest</a>
+                      <a href="#" class="category-link">Git</a>
+                      <a href="#" class="category-link">Bitbucket</a>
+                      <a href="#" class="category-link">VS Code</a>
+                      <a href="#" class="category-link">Chrome Developer Tools</a>
+                      <a href="#" class="category-link">Jira</a>
+                      <a href="#" class="category-link">Figma</a>
+                      <a href="#" class="category-link">English</a>
+                    </div>
+                  </div>
+                  <div class="content-career__main">
+                    <ul class="content-career__list list-content-career">
+                      <li class="list-content-career__item">Разработка программного обеспечения: создание, тестирование и поддержка программных решений, соответствующих требованиям проектов.</li>
+                      <li class="list-content-career__item">Работа в команде разработчиков, дизайнеров и тестировщиков</li>
+                      <li class="list-content-career__item">Кодирование и отладка: написание чистого и эффективного кода, а также выявление и устранение ошибок в программном обеспечении.</li>
+                      <li class="list-content-career__item">Техническая поддержка: оказание помощи клиентам и коллегам по техническим вопросам и проблемам с программным обеспечением.</li>
+                      <li class="list-content-career__item">Анализ и оптимизация: проведение анализа производительности и оптимизации программных продуктов.</li>
+                      <li class="list-content-career__item">Исследование новых технологий: изучение последних тенденций в области разработки программного обеспечения и их применение в рамках проектов.</li>
+                      <li class="list-content-career__item">Соблюдение сроков и стандартов: уверенное соблюдение установленных сроков и стандартов разработки.</li>
+                      <li class="list-content-career__item">Улучшение процессов: внедрение идей для улучшения процессов разработки и повышения эффективности работы команды.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section  data-fp-section class="page__skills skills">
+          <div class="skills__container">
+            <div class="skills__title title">
+              <div class="title__label">учебный путь</div>
+              <h2 class="title__value">Образование & Навыки</h2>
+            </div>
+            <div class="skills__body">
+              <div class="skills__timeline timeline">
+                <div class="timeline__item">
+                  <div class="timeline__title">Mate academy, курс полного дня</div>
+                  <div class="timeline__text">направление Frontend — 850+ часов </div>
+                  <div class="timeline__date">2019 - 2020</div>
+                </div>
+                <div class="timeline__item">
+                  <div class="timeline__title">Радиотехнический колледж</div>
+                  <div class="timeline__text">разработка программного обеспечения</div>
+                  <div class="timeline__date">2015 - 2019 (с отличием)</div>
+                </div>
+              </div>
+              <div class="skills__content content-skills">
+                <div class="content-skills__text text">
+                  <p>
+                    На протяжении 5+ лет я постоянно обучаюсь в области frontend и экспериментирую с новыми технологиями и фреймворками, и здесь вы можете увидеть краткое описание моих навыков.
+                  </p>
+                </div>
+                <ul class="content-skills__items">
+                  <div class="content-skills__item">
+                    <li class="content-skills__label">Angular</li>
+                  </div>
+                  <div class="content-skills__item">
+                    <li class="content-skills__label">Typescript, JavaScript (ES6)</li>
+                  </div>
+                  <div class="content-skills__item">
+                    <li class="content-skills__label">HTML5</li>
+                  </div>
+                  <div class="content-skills__item">
+                    <li class="content-skills__label">CSS3</li>
+                  </div>
+                  <div class="content-skills__item">
+                    <li class="content-skills__label">RxJS</li>
+                  </div>
+                  <div class="content-skills__item">
+                    <li class="content-skills__label">Fetch, REST API</li>
+                  </div>
+                  <div class="content-skills__item">
+                    <li class="content-skills__label">Git/GitHub, Bitbucket, VS Code, Chrome Developer Tools, NPM, Jira, Figma</li>                  
+                  </div>
+                  <div class="content-skills__item">
+                    <li class="content-skills__label">Понимание ООП</li>
+                  </div>
+                  <div class="content-skills__item">
+                    <li class="content-skills__label">Английский: Intermediate</li>
+                  </div>
+                  <!-- <div class="content-skills__item">
+                    <div class="content-skills__label">TypeScript</div>
+                    <div class="content-skills__line">
+                      <span style="width: 52%"></span>
+                    </div>
+                  </div> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
 </html>
