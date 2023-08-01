@@ -1595,6 +1595,10 @@ textarea.form__input {
             transform: rotate(45deg);
   }
 
+  .footer__container {
+    padding-bottom: 6.25rem;
+  }
+
   .main-section__container {
     -ms-grid-columns: auto;
     grid-template-columns: auto;

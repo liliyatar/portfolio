@@ -14,6 +14,9 @@
 		gap: rem(15);
 		@include adaptiveValue("padding-top", 88, 20);
 		@include adaptiveValue("padding-bottom", 88, 20);
+		@media (max-width: $mobile) {
+			padding-bottom: rem(100);
+		}
 	}
 
 	&__social {
