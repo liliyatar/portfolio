@@ -1617,10 +1617,6 @@ textarea.form__input {
   .skills__container {
     padding-bottom: 6.25rem;
   }
-
-  .contacts__container {
-    padding-bottom: 6.25rem;
-  }
 }
 
 @media (max-width: 47.99875em) and (any-hover: none) {
